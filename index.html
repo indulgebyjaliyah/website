@@ -1,10 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Chef Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x600/?chef,kitchen') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .services, .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my GitHub Pages website.</p>
+
+  <header>
+    <h1>Chef Olivia – Private Dining Experience</h1>
+    <p>Bringing gourmet cuisine to your home</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>With over 10 years of experience in fine dining, I bring exceptional culinary experiences directly to your table. Whether it's an intimate dinner for two or a celebration with friends, I tailor every meal to your taste and preferences.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Private Dinners</h3>
+        <p>Personalized multi-course meals in the comfort of your home.</p>
+      </div>
+      <div class="card">
+        <h3>Cooking Classes</h3>
+        <p>Hands-on instruction in your kitchen or virtually.</p>
+      </div>
+      <div class="card">
+        <h3>Event Catering</h3>
+        <p>Custom menus for birthdays, anniversaries, or small events.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Sample Menu</h2>
+    <div class="menu-items">
+      <div class="card">
+        <h4>Starter</h4>
+        <p>Seared scallops with citrus beurre blanc</p>
+      </div>
+      <div class="card">
+        <h4>Main Course</h4>
+        <p>Herb-crusted lamb with roasted vegetables</p>
+      </div>
+      <div class="card">
+        <h4>Dessert</h4>
+        <p>Dark chocolate mousse with raspberry coulis</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Tell me about your event..." required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chef Olivia. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
